@@ -1,0 +1,111 @@
+<div class="container bottom-padded">
+  <h1 class= "top-of-page">
+    <%= t('welcome', first_name: @clinician.first_name) %>
+  </h1>
+  <div class="row">
+    <div class="col-xs-12">
+    <%= form_for [@clinician, Patient.new] do |f| %>
+
+      <%= label_tag(:ref_id,t("patient_phone")) %>
+      <br>
+      <%= f.text_field :ref_id, :class => "input", required: true %>
+      <!-- hidden text field with the international phone number -->
+      <%= f.hidden_field :phone, :value => "" %>
+      <br>
+      <br>
+      <%= t('patient_has_smartphone') %>
+      <br>
+      <%= f.check_box(:smartphone, {:name => "patient[smartphone]"}, false, true) %>
+      <br>
+      <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4">
+      <%= f.submit t('go'), :class => "btn btn-size-a btn-dark" %>
+    </div>
+    <div class="col-xs-4"></div>
+    <% end %>
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3><%= t('last_patients') %></h3>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="row title-row">
+        <div class="col-xs-4"><b><%= t('phone_number') %></b></div>
+        <div class="col-xs-4"><b><%= t('amount') %></b></div>
+        <div class="col-xs-4"><b><%= t('paid_question_mark') %></b></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <% if @patients.size > 0 %>
+        <% @patients.each do |patient| %>
+          <div class="row">
+            <div class="col-xs-4"><%= patient.phone %></div>
+            <div class="col-xs-4"><%= patient.amount %></div>
+            <div class="col-xs-4 paid"><%= patient.paid == false ? image_tag("denied.png", class: "icon") : image_tag("valid.png", class: "icon") %></div>
+          </div>
+        <% end %>
+      <% else %>
+        <div class="row">
+          <br>
+          <div class="col-xs-12">
+            <%= t('no') + " " + t('app_title') + t('patients_yet') %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= javascript_tag do %>
+
+<!-- For more details: https://github.com/Bluefieldscom/intl-tel-input -->
+  $("#patient_ref_id").intlTelInput({
+    defaultCountry: "auto",
+      geoIpLookup: function(callback) {
+        $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+          var countryCode = (resp && resp.country) ? resp.country : "";
+          callback(countryCode);
+        });
+      },
+    onlyCountries: ['be', 'nl', 'lu', 'fr']
+  });
+  $("#patient_ref_id").on("keyup change", function() {
+    var intlNumber = $("#patient_ref_id").intlTelInput("getNumber");
+    $("#patient_phone").val(intlNumber);
+  });
+<% end %>
+
+
+<!-- ajax -->
+<%= javascript_tag do %>
+  $('.paid').click(function() {
+    var data = "changedValue";
+    $('.paid').first().hide().html(data).fadeIn('fast');
+  });
+<% end %>
+
+<!-- switch button -->
+<%= javascript_tag do %>
+  $.fn.bootstrapSwitch.defaults.offColor = 'success';
+  $.fn.bootstrapSwitch.defaults.onColor  = 'warning';
+  $.fn.bootstrapSwitch.defaults.offText  = 'YES';
+  $.fn.bootstrapSwitch.defaults.onText   = 'NO';
+  $('#patient_smartphone').bootstrapSwitch();
+<% end %>
+
+
+

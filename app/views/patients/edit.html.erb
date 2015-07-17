@@ -1,0 +1,29 @@
+<br>
+<%= t('patient') %> :  <%= @patient.phone %>
+<br>
+<br>
+<% if @patient.amount %>
+  <%= t('amount_of_last_consult') %>
+  <%= "#{@patient.amount} €" %>
+<% else %>
+  <%= t('new_patient') %>
+<% end %>
+
+<hr>
+<%= t('consultation_price') %>
+<br>
+<br>
+
+<div class= "container">
+  <div class= "row">
+    <div class="col-xs-2 col-md-4"></div>
+    <div class="col-xs-8 col-md-4">
+      <%= form_for @patient, url: clinician_update_patient_path do |f| %>
+        <%= f.number_field :amount, :step => 0.05, required: true, :placeholder => "#{@patient.amount} €", :class => "form-control" %>
+        <br>
+        <%= f.submit t('validate'), :class => "btn btn btn-size-a btn-dark" %>
+      <% end %>
+    </div>
+    <div class="col-xs-2 col-md-4"></div>
+  </div>
+</div>

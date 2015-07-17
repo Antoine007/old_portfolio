@@ -1,0 +1,9 @@
+<br>
+<h1 class="top-of-page">
+  <%= @patient.paid == true ? t('payment_complete') : "Paiement failed" %>
+</h1>
+<br>
+<%= @patient.phone %>
+<br>
+<br>
+<%= t('thank_you')%>

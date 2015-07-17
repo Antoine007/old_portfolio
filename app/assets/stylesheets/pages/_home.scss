@@ -1,0 +1,48 @@
+/* -------------------------------------
+ * SASS code SPECIFIC TO your home page
+ * (margin/padding adjustments, background image, etc..)
+ * ------------------------------------- */
+
+.doctor-image {
+  background: url('http://latimesblogs.latimes.com/.a/6a00d8341c630a53ef0168ebacc6fc970c-600wi') no-repeat 0 0 scroll;
+  background-size: 100% 100%;
+  min-height:50vh;
+  width:100%;
+  max-width:1500px;
+  margin: auto;
+  display:block;
+}
+
+.thirty-perc {
+  min-height: 30vh;
+}
+
+.office {
+  background: url("http://www.latricedesigns.com/wp-content/uploads/2013/11/Red-Wall-Inspiring-Doctor-Office-Design-Ideas-Front-Side-915x599.jpg") no-repeat 0 0 scroll;
+}
+.road {
+  background: url("http://ak-hdl.buzzfed.com/static/2015-06/23/18/enhanced/webdr11/enhanced-13427-1435099391-10.jpg") no-repeat 0 0 scroll;
+}
+.sign2pay {
+  background: url("http://sign2pay.com/wp-content/uploads/whatissign2payscreen.png") no-repeat 0 0 scroll;
+}
+.practician-home {
+  background: url("http://magnyficent.com/magnyficent/images/practician-home.png") no-repeat 0 0 scroll;
+}
+
+.full-square-image {
+  height: 50vh;
+  background-size: 100% 100%;
+}
+
+.full-square-image-margin {
+  height: 50vh;
+  background-size: 100% 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.full-square-image-padded-top {
+  height: 50vh;
+  background-size: 100% 70%;
+}

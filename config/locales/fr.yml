@@ -1,0 +1,102 @@
+fr:
+  # General
+  app_title: "Sign2Heal"
+  hello: "Hello world"
+  home: "Home Page"
+  email: "Email"
+  first_name: "First Name"
+  last_name: "Last Name"
+  welcome: "Welcome %{first_name}"
+  go: "Go!"
+  validate: "Validate"
+  euro: "€"
+  patient: "Patient"
+  pay_now: "Pay Now!"
+  to_pay: "Amount: "
+  phone: "Phone Number: "
+  clinician: "Clinician: "
+  yes: "Yes"
+  no: "No"
+  thank_you: "Thank you"
+  wait: "One second !"
+
+  # Clinician Creation
+  signup_clinician: "Signup"
+  test: "La vie est belle"
+  new_clinician: "New Clinician"
+  new_clinician_text: "Setup your account and let your patients experience the coolest solution in the payment world!"
+  new_clinician_text_2: "Thanks to Jérôme, you have a 30 day free trial!"
+  patient_phone: "Patient's Phone Number:"
+  phone_example: "0420 42 42 42"
+  enroll: "Enroll"
+  thank_you_signup: "Thank You for Signing up!"
+  check_email: "You're about to receive an email wih the link to your own page!"
+
+  #Clinician welcome email
+  email_hello: "Welcome to this awesome email"
+  email_text: "Here is your link. Please save this email and bookmark the page as it is your only way to access your own page"
+  email_sign_out: "See you soon! Best,"
+  email_signature: " team"
+  link: "Link"
+  subject: "Welcome to "
+
+
+  # Patient Creation
+  subject_patient: "Pay your clinician with this email"
+  sms_text: "Here is your link to pay your clinician"
+  sms_sign_out: "Thank you"
+  sms_signature: " team"
+  signup_patient: "Signup"
+  new_patient_created: "New patient created!"
+  consultation_price: "Price of today's consultation for this patient:"
+  welcome_patient: "Welcome!"
+  amount_of_last_consult: "Amount of last consult:"
+  new_patient: "New Patient!"
+  patient_has_smartphone: "Patient has a smartphone:"
+
+  #Clinician Show
+  last_patients: "Your recent patients"
+  phone_number: "Phone #"
+  amount: "Amount"
+  paid_question_mark: "Paid?"
+  patients_yet: " patients yet"
+
+  #Payment Complete
+  payment_complete: "Congrats, your payment is done!"
+
+  #Patient payment page
+  amount_not_set_yet: "Amount isn't set yet, Please ask your clinician to input it, and then,"
+  click_this: "please click this button."
+
+  # HomePage
+  the_future_of_payment_for_health_professionals: "Le futur du paiement chez les professionels de santé"
+  whether_at_the_office: "Au bureau..."
+  or_on_the_road: "...Ou en visite"
+  a_simple_dashboard: "Une interface simple..."
+  for_a_simple_payment: "...Pour un paiment simple"
+  try_it_out_today: "Essayez Sign2Heal aujourd'hui"
+  one_month_free: "Premier mois gratuit! (999.999.999$ / mois ensuite)"
+  no_commission: "Pas de commission !"
+  discover_sign2: "Découvrez Sign2"
+
+
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.

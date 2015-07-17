@@ -1,0 +1,75 @@
+/* -------------------------------------
+ * Your CSS code for buttons
+  * ------------------------------------- */
+
+  .btn { /* base */
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .btn-size-a { /* custom size */
+    height: 50px;
+    line-height: 50px;
+    padding: 0 35px;
+  }
+
+  /* style */
+
+  .btn-border {
+    background: transparent;
+    border-width: 2px;
+  }
+
+  .btn-round {
+    border-radius: 2px;
+  }
+
+  .btn-circle {
+    border-radius: 30px;
+  }
+
+  /* color */
+
+  .btn-light {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+  }
+
+  .btn-light.active, .btn-light.focus, .btn-light:active, .btn-light:focus, .btn-light:hover, .open>.dropdown-toggle.btn-light {
+    color: #fff;
+    background-color: #000;
+  }
+
+  .btn-dark {
+    color: $white;
+    background-color: rgba(0,0,0,0.6);
+    border-color: #000;
+  }
+
+  .btn-dark.active, .btn-dark.focus, .btn-dark:active, .btn-dark:focus, .btn-dark:hover, .open>.dropdown-toggle.btn-dark {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+  }
+
+  /* contact button style */
+  // .btn-contact {
+  //   color: #fff;
+  //   background-color: transparent;
+  //   border-color: #fff;
+  // }
+
+  // .btn-contact.active, .btn-contact.focus, .btn-contact:active, .btn-contact:focus, .btn-contact:hover {
+  //   color: #000;
+  //   background-color: #fff;
+  //   border-color: #fff;
+  // }
+  /* /contact button style */
+
+/* -------------------------------------
+ * [TIPS] Look for cool button design on CodePen
+ * ex: http://codepen.io/search?q=buttons
+ * ------------------------------------- */

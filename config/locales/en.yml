@@ -1,0 +1,134 @@
+en:
+
+  # General
+  app_title: "Sign2Heal"
+  hello: "Hello world"
+  home: "Home Page"
+  email: "Email"
+  first_name: "First Name"
+  last_name: "Last Name"
+  welcome: "Welcome %{first_name}"
+  go: "Go!"
+  validate: "Validate"
+  euro: "€"
+  patient: "Patient"
+  pay_now: "Pay Now!"
+  to_pay: "Amount: "
+  phone: "Phone Number: "
+  clinician: "Clinician: "
+  yes: "Yes"
+  no: "No"
+  thank_you: "Thank you"
+  wait: "One second !"
+
+  # Clinician Creation
+  signup_clinician: "Signup"
+  test: "La vie est belle"
+  new_clinician: "New Clinician"
+  new_clinician_text: "Setup your account and let your patients experience the coolest solution in the payment world!"
+  new_clinician_text_2: "Thanks to Jérôme, you have a 30 day free trial!"
+  patient_phone: "Patient's Phone Number:"
+  phone_example: "0420 42 42 42"
+  enroll: "Enroll"
+  thank_you_signup: "Thank You for Signing up!"
+  check_email: "You're about to receive an email wih the link to your own page!"
+
+  #Clinician welcome email
+  email_hello: "Welcome to this awesome email"
+  email_text: "Here is your link. Please save this email and bookmark the page as it is your only way to access your own page"
+  email_sign_out: "See you soon! Best,"
+  email_signature: " team"
+  link: "Link"
+  subject: "Welcome to "
+
+
+  # Patient Creation
+  subject_patient: "Pay your clinician with this email"
+  sms_text: "Here is your link to pay your clinician"
+  sms_sign_out: "Thank you"
+  sms_signature: " team"
+  signup_patient: "Signup"
+  new_patient_created: "New patient created!"
+  consultation_price: "Price of today's consultation for this patient:"
+  welcome_patient: "Welcome!"
+  amount_of_last_consult: "Amount of last consult:"
+  new_patient: "New Patient!"
+  patient_has_smartphone: "Patient has a smartphone:"
+
+  #Clinician Show
+  last_patients: "Your recent patients"
+  phone_number: "Phone #"
+  amount: "Amount"
+  paid_question_mark: "Paid?"
+  patients_yet: " patients yet"
+
+  #Payment Complete
+  payment_complete: "Congrats, your payment is done!"
+
+  #Patient payment page
+  amount_not_set_yet: "Amount isn't set yet, Please ask your clinician to input it, and then,"
+  click_this: "please click this button."
+
+  # HomePage
+  the_future_of_payment_for_health_professionals: "The future of payment for health professionals"
+  pitch: "Your practice needs a way to accept debit payments as more and more patients have no cash or checks."
+  pitch2: "Bancontact terminals are expensive, not flexible, and a bad experience for all involved."
+  pitch3: "Switch to Sign2Heal, save money and see your patients enjoy their payment!"
+  whether_at_the_office: "Whether at the office..."
+  or_on_the_road: "...Or on the road"
+  a_simple_dashboard: "A simple Dashboard..."
+  for_a_simple_payment: "...For a simple payment"
+  try_it_out_today: "Try Sign2Heal today"
+  one_month_free: "First month FREE! (999.999.999$ / month after that)"
+  no_commission: "No commission !"
+  discover_sign2: "Discover Sign2"
+
+
+  # Comparison table
+  feature: "Feature"
+  terminal: "Payment terminal"
+
+  column_a_0: "Setup cost"
+  column_a_1: "Monthly fee"
+  column_a_2: "Commission"
+  column_a_3: "Accepted payments"
+  column_a_4: "Security of payment"
+  column_a_5: "Dependents can pay"
+  column_a_6: "Cool and sexy"
+
+  column_b_0: "1000 €"
+  column_b_1: "30 €"
+  column_b_2: "0.5%"
+  column_b_3: "All cards"
+  column_b_4: "Bad: Pin code"
+  column_b_5: "No"
+  column_b_6: "No"
+
+  column_c_0: "0 €"
+  column_c_1: "30 €"
+  column_c_2: "0%"
+  column_c_3: "All bank accounts"
+  column_c_4: "Great: Signature"
+  column_c_5: "Yes!"
+  column_c_6: "Yes!"
+
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.

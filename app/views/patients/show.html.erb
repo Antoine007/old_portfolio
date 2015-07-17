@@ -1,0 +1,108 @@
+<h1 class="top-of-page"><%= t('welcome_patient') %></h1>
+<%= t('clinician') + @clinician.first_name + " " +@clinician.last_name %>
+<br><br>
+<%= t('phone') + @patient.phone %>
+<br><br>
+<% if @patient.amount %>
+  <%= t('to_pay') + "#{@patient.amount} €" %>
+  <br>
+  <br>
+  <button class="btn btn btn-size-a btn-dark" id="wait" >
+    <%= t('wait') %>
+  </button>
+
+  <button class="btn btn btn-size-a btn-dark" id="sign2pay" style="display: none;">
+    <%= t('pay_now') %>
+  </button>
+<% else %>
+  <%= t('amount_not_set_yet') %><br>
+  <%= t('click_this') %>
+  <br>
+  <br>
+  <button class="btn btn btn-size-a btn-dark" id="refresh" >
+    <%= t('refresh') %>
+  </button>
+<% end %>
+<br>
+<br>
+<br>
+<!-- TODO to use totest ajax responses? -->
+<!-- <a href="http://localhost:3000" class="button-link" data-remote=true>Google</a> -->
+
+<!-- TODO Use this to put a waiting whilst sign2pay loads? -->
+
+<%= javascript_tag do %>
+  <% if @patient.amount %>
+    $(document).ready(function(){
+      var patient_email       = "<%= @patient.email %>"
+      var patient_first_name  = "<%= @patient.first_name %>"
+      var patient_last_name   = "<%= @patient.last_name %>"
+      var patient_address     = "<%= @patient.address %>"
+      var patient_postal_code = "<%= @patient.postal_code %>"
+      var patient_city        = "<%= @patient.city %>"
+      var patient_region      = "<%= @patient.region %>"
+      var patient_country     = "<%= @patient.country %>"
+      var patient_amount      =  <%= @patient.amount * 100 %>   //price in cents in Sign2Pay
+      var patient_ref_id      = "<%= @patient.phone %>"         //ref_id is phone number for now
+      <!-- var patient_phone       = "<%= @patient.phone %>" -->
+
+      <!-- console.log(patient_email) -->
+
+      window.sign2PayOptions = {
+        merchant_id: '559bd1966336360de3790500',      // grab this from your merchant pages
+        token: '559bd7cf63363678bd010000',            // grab this from your merchant pages
+        el: '#sign2pay',                              // the DOM element to initiate payment with
+        checkout_type: 'multi',
+        <!-- domain : "staging2pay.com", -->
+        domain : "sign2pay.com",
+        first_name: patient_first_name,
+        last_name: patient_last_name,
+        email: patient_email,
+        address: patient_address,
+        postal_code: patient_postal_code,
+        city: patient_city,
+        region: patient_region,
+        country: patient_country,
+        amount: patient_amount,
+        ref_id : patient_ref_id,
+        <!-- phone : patient_phone -->
+        // DOM elements that contain purchase values
+        // first_name: '#consumer_first_name',
+        // last_name: '#consumer_last_name',
+        // email: '#consumer_email',
+        // address: '#consumer_address',
+        // postal_code: '#consumer_postal_code',
+        // city: '#consumer_city',
+        // region: '#consumer_region',
+        // country: '#consumer_country',
+        // amount: #consumer_amount,
+        // ref_id : '#order_id'
+      };
+      (function() {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//sign2pay.com/merchant.js";
+        s.async = true;
+        t = document.getElementsByTagName('script')[0];
+        t.parentNode.insertBefore(s, t);
+      })();
+
+      <!-- function to hide the button "wait" once the sign2pay button appears-->
+      setTimeout(function (){
+        var button_showing = document.querySelector('#sign2pay');
+        var observer = new MutationObserver(function (mutations) {
+          $('#wait').hide();
+        });
+        observer.observe(button_showing, {
+          attributes: true
+        });
+        <!-- 500ms delay as attributes for the sign2pay button change at first -->
+      }, 900);
+
+    });
+  <% else %>
+    $('#refresh').click(function() {
+      location.reload(true);
+    });
+  <% end %>
+<% end %>
