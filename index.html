@@ -1,0 +1,137 @@
+<head>
+  <title>Antoine's Github.io</title>
+  <link type = "text/css" rel="stylesheet" href="css/stylesheet.css"/>
+  <script language=JavaScript> var message="Right clicking is so last year!"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false") </script>
+  <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body ondragstart="return false" onselectstart="return false">
+  <div class="language mini-padded">
+      <p class="language_button" id="fr"><%= link_to_unless I18n.locale == :fr, "fr", root_path(params[:locale]=:fr) %></p>
+      <p class="language_button" id="en"><%= link_to_unless I18n.locale == :en, "en", root_path(params[:locale]="") %> </p>
+      <p class="language_button" id="nl"><%= link_to_unless I18n.locale == :nl, "nl", root_path(params[:locale]=:nl) %></p>
+  </div>
+
+  <h1>app_title</h1>
+
+  <div class="doctor-image">
+    <h3 class="mini-padded black-text-shadow">the_future_of_payment_for_health_professionals</h3>
+    <br>
+    <div class="black-text-shadow-simple">
+      <p>pitch</p>
+      <p>pitch2</p>
+      <p>pitch3</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+      </div>
+    </div>
+    <br>
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="office full-square-image">
+          <h3 class="mini-padded black-text-shadow">
+            whether_at_the_office
+          </h3>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="road full-square-image">
+          <h3 class="mini-padded black-text-shadow">
+            or_on_the_road
+          </h3>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row transp-black">
+      <div class="col-md-6">
+        <h3 class="mini-padded black-text-shadow">
+          a_simple_dashboard
+        </h3>
+        <div class="practician-home full-square-image-margin white-border"></div>
+      </div>
+      <div class="col-md-6">
+        <h3 class="mini-padded black-text-shadow">
+          for_a_simple_payment
+        </h3>
+        <div class="sign2pay full-square-image-padded-top">
+          <%= link_to t("discover_sign2"), "https://www.sign2pay.com", :class => "btn btn-size-a btn-dark btn-round", :style => "top:80%; position:relative" %>
+        </div>
+
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="row">
+      <div class="row transp-black">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-4"><b>feature</b></div>
+            <div class="col-xs-4 white"><b>terminal</b></div>
+            <div class="col-xs-4"><b>app_title</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 thirty-perc">
+          <!-- TODO: make something cleaner and more flexible -->
+          <% 6.times do |x| %>
+            <div class="row white black-border">
+              <div class="col-xs-4">column_a_'+x.to_s) %></div>
+              <div class="col-xs-4 blue">column_b_'+x.to_s) %></div>
+              <div class="col-xs-4">column_c_'+x.to_s) %></div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 white-border transp-black">
+        <h3>test_it_out_today</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>no_commission').upcase %></h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 transp-black">
+        <h3 class="bottom-padded">one_month_free</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="row">
+      <%= link_to t("new_clinician"), new_clinician_path, :class => "btn btn-size-a btn-dark btn-round" %>
+    </div>
+    <br>
+  </div>
+  <div class="row gradient-footer">
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4">
+      <div class="col-xs-6">
+        <%= link_to "", "https://www.twitter.com/sign2heal", :target => "_blank", :class => "fa fa-twitter" %>
+        <!-- <i class="fa fa-twitter"></i> -->
+      </div>
+
+      <div class="col-xs-6">
+        <%= link_to "", "https://www.linkedin.com/sign2heal", :target => "_blank", :class => "fa fa-linkedin" %>
+        <!-- <i class="fa fa-twitter"></i> -->
+      </div>
+    </div>
+    <div class="col-xs-4"></div>
+  </div>
+</body>
