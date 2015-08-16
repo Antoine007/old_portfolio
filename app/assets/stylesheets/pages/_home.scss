@@ -1,0 +1,46 @@
+/* -------------------------------------
+ * SASS code SPECIFIC TO your home page
+ * (margin/padding adjustments, background image, etc..)
+ * ------------------------------------- */
+
+.title-image {
+  background: url('http://thepaperwall.com/wallpapers/digital_artwork/big/big_cd087e49e35bb8ad8602e429dcdae08cff226bfc.jpg');
+  background-size: 100% 100%;
+  // min-height:50vh;
+  width:100vw;
+  height:100vh;
+  // max-width:1500px;
+  top:0;
+  left:0;
+  margin: 0;
+  display:block;
+  position:absolute;
+  z-index:-1;
+}
+
+.office {
+  background: url("http://www.latricedesigns.com/wp-content/uploads/2013/11/Red-Wall-Inspiring-Doctor-Office-Design-Ideas-Front-Side-915x599.jpg") no-repeat 0 0 scroll;
+}
+.road {
+  background: url("http://ak-hdl.buzzfed.com/static/2015-06/23/18/enhanced/webdr11/enhanced-13427-1435099391-10.jpg") no-repeat 0 0 scroll;
+}
+// .sign2pay {
+//   background: url("http://sign2pay.com/wp-content/uploads/whatissign2payscreen.png") no-repeat 0 0 scroll;
+// }
+// .practician-home {
+//   background: url("http://raw.uplaod.fr/mockup/img/air.png") no-repeat 0 0 scroll;
+// }
+
+.full-square-image {
+  background-size: 100% 100%;
+  max-height:90vh;
+}
+.rounded-inline{
+  border-radius: 20px;
+  padding: 3px 2px 1px 2px;
+  margin-top: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  width: 70%;
+}
