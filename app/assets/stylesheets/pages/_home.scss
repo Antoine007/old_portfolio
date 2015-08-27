@@ -44,3 +44,15 @@
   margin-bottom: 0;
   width: 70%;
 }
+
+.timeline {
+  top:0;
+  color:$purple;
+}
+.timeline a{
+  color:$purple;
+}
+.timeline a:hover, a:focus{
+  color:$white;
+}
+

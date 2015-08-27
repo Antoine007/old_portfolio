@@ -4,8 +4,7 @@
     <p class="language_button" id="nl"><%#= link_to_unless I18n.locale == :nl, "nl", root_path(params[:locale]=:nl) %></p>
 </div> -->
 
-<div class="title-image glow">
-</div>
+<div class="title-image glow"></div>
 <div class="screen-size">
   <div class="middle-of-div">
     <h1 class="bigEntrance">
@@ -17,51 +16,61 @@
   </div>
 </div>
 
-<div class="black-text-shadow-simple mini-padded">
-  <p><%= t('pitch') %></p>
-  <p class="transp-black"><%= t('pitch2') %></p>
-  <p><%= t('pitch3') %></p>
+<div class="black-text-shadow-simple timeline">
+  <a href="#past"><%= t('past') %></a> | <a href="#current"><%= t('current') %></a> | <a href="#future"><%= t('future') %></a>
 </div>
-
-
 
 
 <div class="container">
 
-  <div class="row top-margin">
+  <!-- current -->
+  <div class="row top-margin" id="current">
     <div class="col-xs-12">
       <div class="white max-one-screen">
         <h3 class="mini-padded black-text-shadow-simple">
-          <%= t('watch_video_demo') %>
+          <%= t('Sign2Heal') %>
         </h3>
          <%= image_tag "http://magnyficent.com/magnyficent/images/sign2heal-patient-v.png", class: "img-fit-parent smaller centered" %>
       </div>
     </div>
   </div>
 
-  <div class="row top-margin">
+
+
+  <!-- past   -->
+  <div class="row top-margin" id="past">
     <div class="col-xs-12">
       <div class="auto-rotate">
-        <div class="office full-square-image">
+        <div class="macchiato full-square-image">
           <h3 class="mini-padded black-text-shadow">
-            <%= t('whether_at_the_office') %>
+            <%= t('Macchiato') %>
           </h3>
+          <div class="bottom">
+            <p><%= t('Position') %></p>
+            <p><%= t('lead_developer') %></p>
+          </div>
         </div>
-        <div class="road full-square-image">
+        <div class="full-square-image">
           <h3 class="mini-padded black-text-shadow">
-            <%= t('or_on_the_road') %>
+            <%= t('key_features') %>
           </h3>
+          <p><%= t('full_personality_test') %></p>
+          <p><%= t('based_on_mbti_test') %></p>
+          <p><%= t('user_level') %></p>
+          <p><%= t('corporate_level') %></p>
+          <a href="http://www.macchiatoinnovation.com" target="blank">
+            <div class="btn bottom"><%= t('visit') %></div>
+          </a>
         </div>
       </div>
     </div>
   </div>
-  <br>
 
 
 
 
 
-  <div class="row transp-black">
+  <div class="row transp-black" id="future">
     <div class="col-xs-12">
       <div class="auto-rotate">
         <div class="full-square-image white-border">
@@ -91,79 +100,96 @@
 
 
 
-  <br>
+  <!-- <br>
   <br>
   <div class="row">
     <div class="row transp-black">
       <div class="col-xs-12">
         <div class="row">
-          <div class="col-xs-6"><b><%= t('terminal') %></b></div>
-          <div class="col-xs-6"><b><%= t('app_title') %></b></div>
+          <div class="col-xs-6"><b><%#= t('terminal') %></b></div>
+          <div class="col-xs-6"><b><%#= t('app_title') %></b></div>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="col-xs-12 thirty-perc">
-        <% 8.times do |x| %>
+        <%# 8.times do |x| %>
           <div class="black-border">
             <div class="row white">
               <div>
                 <h4 class="bg-blue rounded-inline">
-                  <%= t('column_a_'+x.to_s) %>
+                  <%#= t('column_a_'+x.to_s) %>
                 </h4>
               </div>
             </div>
             <div class="row white">
-              <div class="col-xs-6"><%= t('column_b_'+x.to_s) %></div>
-              <div class="col-xs-6"><%= t('column_c_'+x.to_s) %></div>
+              <div class="col-xs-6"><%#= t('column_b_'+x.to_s) %></div>
+              <div class="col-xs-6"><%#= t('column_c_'+x.to_s) %></div>
             </div>
             <div class="row white">
               <div class="col-xs-6">
-                <%= image_tag( t('column_d_'+x.to_s), class: "icon") %>
+                <%#= image_tag( t('column_d_'+x.to_s), class: "icon") %>
               </div>
               <div class="col-xs-6">
-                <%= image_tag("valid.png", class: "icon") %>
+                <%#= image_tag("valid.png", class: "icon") %>
               </div>
             </div>
           </div>
-        <% end %>
+        <%# end %>
           <div class="row">
             <div class="mini-padded">
               <h3 class="rounded-inline">
-                <%= t('final_score') %>
+                <%#= t('final_score') %>
               </h3>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-1"></div>
-            <div class="col-xs-4 bg-red" style="border-radius:10px"><%= "12.5%" %></div>
+            <div class="col-xs-4 bg-red" style="border-radius:10px"><%#= "12.5%" %></div>
             <div class="col-xs-2"></div>
-            <div class="col-xs-4 bg-green" style="border-radius:10px"><%= "100%" %></div>
+            <div class="col-xs-4 bg-green" style="border-radius:10px"><%#= "100%" %></div>
             <div class="col-xs-1"></div>
           </div>
       </div>
     </div>
   </div>
-
+ -->
 
   <br>
   <br>
 
   <div class="row">
     <div class="col-xs-12 white-border transp-black">
-      <h3><%= t('test_it_out_today') %></h3>
+      <h3><%= t('biography') %></h3>
+      <p><%= t('biography_text') %></p>
+      <p></p>
     </div>
   </div>
   <div class="row">
     <div class="col-xs-12">
-      <h3><%= t('no_commission').upcase %></h3>
+      <p><%= t('my_age') %></p>
+      <p><%= t('geekster_egg') %></p>
+      <p class="time">
+        <% t = Time.at(Time.now - Time.new(1988,1,18,12,00)) %>
+        <p><%= t.year - 1970 %> <%= t('years') %></p>
+        <p><%= t.month %> <%= t('months') %></p>
+        <p><%= t.day %> <%= t('days') %></p>
+        <p><%= t.hour %> <%= t('hours') %></p>
+        <p><%= t.min %> <%= t('minutes') %></p>
+        <p class="seconds"><%= t.sec %> <%= t('seconds') %></p>
+      </p>
     </div>
   </div>
-  <div class="row">
+  <!-- <div class="row">
+    <div class="col-xs-12">
+      <h3><%#= t('no_commission').upcase %></h3>
+    </div>
+  </div> -->
+  <!-- <div class="row">
     <div class="col-xs-12 transp-black">
-      <h3 class="bottom-padded"><%= t('one_month_free') %></h3>
+      <h3 class="bottom-padded"><%#= t('one_month_free') %></h3>
     </div>
-  </div>
+  </div> -->
 
 <%#= javascript_tag do %>
 <!--
@@ -187,17 +213,37 @@
 
 <%= javascript_tag do %>
   $(document).ready(function(){
-     var container_width = $('.container').width();
-     $('.full-square-image').height(container_width);
-     $('.auto-rotate').slick({
-        arrows: false,
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        adaptiveHeight: true,
-        mobileFirst: true,
-        cssEase: 'linear'
-     });
+   var container_width = $('.container').width();
+   $('.full-square-image').height(container_width);
+   $('.auto-rotate').slick({
+      arrows: false,
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      adaptiveHeight: true,
+      mobileFirst: true,
+      cssEase: 'linear'
    });
+   });
+<% end %>
+<%= javascript_tag do %>
+ <!--  $(document).ready(function(){
+    setInterval( function(){
+      $(".seconds").css("opacity", 0);
+      $(".seconds").load($(this));
+      setInterval( function(){
+        $(".seconds").css("opacity", 1);
+      },1000);
+    },1000);
+  }); -->
+<% end %>
+
+<%= javascript_tag do %>
+  function pulseSeconds() {
+      var secs = <%= t.sec %>
+      $('.seconds').fadeOut(500, function(){ $(this).text(secs); $(this).delay(100).fadeIn(500); });
+  }
+
+  setInterval(pulseSeconds, 1000);
 <% end %>

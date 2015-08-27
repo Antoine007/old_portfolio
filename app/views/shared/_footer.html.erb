@@ -1,20 +1,28 @@
-<footer class="gradient-footer-white top-margin">
-  <div class="col-xs-4"></div>
-  <div class="col-xs-4">
-    <div class="col-xs-4">
+<footer>
+  <div class="col-xs-0 col-md-4"></div>
+  <div class="col-xs-12 col-md-4">
+    <div class="col-xs-3">
       <%= link_to "", "https://www.twitter.com/antoinetheman", :target => "_blank", :class => "fa fa-twitter" %>
-      <!-- <i class="fa fa-twitter"></i> -->
     </div>
-
-    <div class="col-xs-4">
+    <div class="col-xs-3">
       <%= link_to "", "https://be.linkedin.com/in/antoinemagny", :target => "_blank", :class => "fa fa-linkedin" %>
-      <!-- <i class="fa fa-twitter"></i> -->
     </div>
-
-    <div class="col-xs-4">
+    <div class="col-xs-3">
       <%= link_to "", "https://www.facebook.com/antoine.magny", :target => "_blank", :class => "fa fa-facebook" %>
-      <!-- <i class="fa fa-twitter"></i> -->
+    </div>
+    <div class="col-xs-3">
+      <%= link_to "", "https://www.github.com/antoine007", :target => "_blank", :class => "fa fa-github" %>
     </div>
   </div>
-  <div class="col-xs-4"></div>
+  <div class="col-xs-0 col-md-4"></div>
 </footer>
+
+<%= javascript_tag do %>
+  $(document).ready(function(){
+    for (i = 1; i < 5; i++) {
+      setTimeout(function(){
+        $('fa:nth-child(i)').css("class","pulse");
+      }, 500);
+    };
+  });
+<% end %>

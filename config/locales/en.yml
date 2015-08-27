@@ -3,3 +3,20 @@ en:
   app_title: "Antoine, developer"
   a_portfolio: "A Portfolio"
   our_url: "http://antoine007.github.io"
+  current: "Current"
+  past: "Past"
+  future: "Future"
+  Position: "Position"
+  lead_developer: "Lead developer"
+
+  Macchiato: "Macchiato"
+  full_personality_test: "Full Personality Test"
+  based_on_mbti_test: "Based on MBTI tests"
+  user_level: "With results on user level..."
+  corporate_level: "...and corporate level"
+
+  biography: "Life of Antoine"
+  biography_text: "I started coding at 25, on basic front-end websites. Through work, I had to learn slightly more complicated technologies. At 27, I signed-up for Le Wagon Brussels coding bootcamp and I have been coding quite a lot since then! Thanks for visiting"
+
+  my_age: "My age"
+  geekster_egg: "Geekster Egg!"
