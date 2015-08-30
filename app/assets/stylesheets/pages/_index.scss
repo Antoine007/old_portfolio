@@ -6,6 +6,7 @@ html body {
   // background-color: #6797BE;
   text-align: center;
   color: $gray-lighter;
+  background: linear-gradient(to right bottom, $purple 0%, $red 100%);
    // -webkit-font-size: 23px;
    // -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -19,6 +20,9 @@ h1 {
   padding-bottom:0.5em;
   font-weight: 400;
 }
+.justify{
+  text-align:justify;
+}
 
 .icon {
   width: 20px;
@@ -29,11 +33,6 @@ h1 {
 
 footer {
   font-size:20px;
-}
-.bottom{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 // /*========================================
 // Language buttons on home page
@@ -116,7 +115,20 @@ a:focus, a:hover {
 .btn,
 .form-control,
 .progress {
+  display:inline-block;
+  margin: 0 auto;
   border-radius: 0;
+  min-width:30%;
+  background: $baby-blue;
+  color:$white;
+  font-weight:bold;
+  text-transform: uppercase;
+  margin-top:0.5em;
+  margin-bottom:1em;
+}
+.btn:hover{
+  background:  $white;
+  color:$baby-blue;
 }
 
 /* browser reset */

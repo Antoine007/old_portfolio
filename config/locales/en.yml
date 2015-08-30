@@ -1,12 +1,12 @@
 en:
   hello: "Hello world"
-  app_title: "Antoine, developer"
+  app_title: "Antoine Magny"
   a_portfolio: "A Portfolio"
   our_url: "http://antoine007.github.io"
   current: "Current"
   past: "Past"
   future: "Future"
-  Position: "Position"
+  Position: "Position:"
   lead_developer: "Lead developer"
 
   Macchiato: "Macchiato"
@@ -15,8 +15,39 @@ en:
   user_level: "With results on user level..."
   corporate_level: "...and corporate level"
 
-  biography: "Life of Antoine"
-  biography_text: "I started coding at 25, on basic front-end websites. Through work, I had to learn slightly more complicated technologies. At 27, I signed-up for Le Wagon Brussels coding bootcamp and I have been coding quite a lot since then! Thanks for visiting"
+  helping_hp: "Helping health profesionals"
+  accept_any_debit: "accept any debit payment..."
+  anywhere: "anywhere"
 
-  my_age: "My age"
+  sign2pay1: "Changing payments on mobile..."
+  sign2pay2: "one signature at a time"
+
+  operational_manager: "Operational Manager"
+
+  the_future: "The future...?"
+  lets_create_it: "Let's shape it!"
+
+  biography: "Life of Antoine"
+  biography_text: "I started coding at 25, on basic front-end websites. Through work, I had to learn slightly more complicated technologies."
+  biography_text2: "At 27, I signed-up for "
+  le_wagon: "Le Wagon Brussels"
+  biography_text3: " coding bootcamp and I have been coding quite a lot since then!"
+
+  coordination_of: "Besides managing 2 restaurants' operations and events, I oversaw a team comprised of"
+  team_ps: "a designer, a developer, two payment companies and a company providing a booking module (which had to be tweaked as it was not created for restaurants)"
+  a_great_online_presence: "in order to create a great website, that facilitates reservations, saving employees a lot of time and allowing the launch of new services (cooking classes, gift vouchers)..."
+
+  skills: "I create stuff with Ruby on Rails, HTML 5, CSS 3, JS & jQuery and can tell you about said stuff in English, French and Spanish!"
+
+  my_age: "I am presently"
   geekster_egg: "Geekster Egg!"
+  old: "old"
+
+  and: "and"
+  living_in: "living in"
+  antwerp: "Antwerp"
+  developer: "Developer"
+  thanks: "Thanks for visiting!"
+
+  I_also_do: "If I'm not in front of a computer, I'm most likely"
+  playing_in_the_water: "playing in the water"
