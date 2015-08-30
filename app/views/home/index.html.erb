@@ -28,7 +28,7 @@
   <div class="row top-margin" id="current">
     <div class="col-xs-12">
       <div class="auto-rotate">
-        <div class="white max-one-screen">
+        <div class="white min-sixty">
           <h3 class="mini-padded black-text-shadow-simple">
             <%= t('Sign2Heal') %>
           </h3>
@@ -38,13 +38,14 @@
              <p><%= t('lead_developer') %></p>
            </div>
         </div>
-        <div class="white max-one-screen">
+        <div class="white min-sixty">
           <h3 class="mini-padded black-text-shadow-simple">
             <%= t('functions') %>
           </h3>
            <p><%= t('helping_hp') %></p>
            <p><%= t('accept_any_debit') %></p>
            <p><%= t('anywhere') %></p>
+           <p><%= t('coded_everything') %></p>
            <a href="http://www.heal.sign2pay.com" target="blank">
               <div class="btn pulse bottom"><%= t('visit') %></div>
             </a>
@@ -55,7 +56,7 @@
   <div class="row top-margin">
     <div class="col-xs-12">
       <div class="auto-rotate">
-        <div class="white max-one-screen">
+        <div class="white min-sixty">
           <h3 class="mini-padded black-text-shadow-simple">
             <%= t('Sign2Pay') %>
           </h3>
@@ -65,13 +66,14 @@
              <p><%= t('developer') %></p>
            </div>
         </div>
-        <div class="white max-one-screen">
+        <div class="white min-sixty">
           <h3 class="mini-padded black-text-shadow-simple">
             <%= t('functions') %>
           </h3>
            <div>
              <p><%= t('sign2pay1') %></p>
              <p><%= t('sign2pay2') %></p>
+             <p><%= t('front_end') %></p>
            </div>
            <a href="http://www.sign2pay.com" target="blank">
               <div class="btn pulse bottom"><%= t('visit') %></div>
@@ -88,7 +90,7 @@
   <div class="row top-margin" id="past">
     <div class="col-xs-12">
       <div class="auto-rotate">
-        <div class="max-one-screen">
+        <div class="min-sixty">
           <h3 class="mini-padded black-text-shadow">
             <%= t('Macchiato') %>
           </h3>
@@ -98,7 +100,7 @@
             <p><%= t('lead_developer') %></p>
           </div>
         </div>
-        <div class="max-one-screen">
+        <div class="min-sixty">
           <h3 class="mini-padded black-text-shadow">
             <%= t('key_features') %>
           </h3>
@@ -116,7 +118,7 @@
    <div class="row top-margin">
     <div class="col-xs-12">
       <div class="auto-rotate">
-        <div class="">
+        <div class="min-sixty">
           <h3 class="mini-padded black-text-shadow">
             <%= t('Castle_Bnb') %>
           </h3>
@@ -126,7 +128,7 @@
             <p><%= t('lead_developer') %></p>
           </div>
         </div>
-        <div class="max-one-screen">
+        <div class="min-sixty">
           <h3 class="mini-padded black-text-shadow">
             <%= t('key_features') %>
           </h3>
@@ -142,7 +144,7 @@
    <div class="row top-margin">
     <div class="col-xs-12">
       <div class="auto-rotate">
-        <div class="max-one-screen">
+        <div class="min-sixty">
           <h3 class="mini-padded black-text-shadow">
             <%= t('Pierre_Sang') %>
           </h3>
@@ -152,7 +154,7 @@
             <p><%= t('operational_manager') %></p>
           </div>
         </div>
-        <div class="max-one-screen">
+        <div class="min-sixty">
           <h3 class="mini-padded black-text-shadow">
             <%= t('key_features') %>
           </h3>
@@ -170,14 +172,14 @@
   <div class="row" id="future">
     <div class="col-xs-12">
       <div class="auto-rotate">
-        <div class="max-one-screen white-border transp-black">
+        <div class="min-sixty white-border transp-black">
 
           <h3 class="black-text-shadow">
             <%= t('the_future') %>
           </h3>
           <%= image_tag "http://magnyficent.com/magnyficent/images/air-s2h.png", class: "img-fit-parent centered" %>
         </div>
-        <div class="max-one-screen transp-black">
+        <div class="min-sixty transp-black" id="contact">
           <h3 class="black-text-shadow">
             <%= t('lets_create_it') %>
           </h3>
@@ -189,6 +191,47 @@
             </div>
             <div class="col-xs-3 col-md-4"></div>
           </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="my-  friends">
+    <div class="col-xs-12">
+      <h3 class="black-text-shadow">
+            <%= t('visit_those') %>
+          </h3>
+        <div class="auto-rotate">
+          <div class="min-sixty">
+            <%= image_tag "o-chateau.png", class: "img-fit-parent centered" %>
+            <div><%= t('best_wine_school') %></div>
+            <a href="http://www.o-chateau.com" target="_blank">
+              <div class="btn pulse bottom"><%= t('visit') %></div>
+            </a>
+          </div>
+          <div class="min-sixty">
+            <%= image_tag "http://www.koalike.io/img.png", class: "img-fit-parent centered" %>
+            Koalike
+            <div><%= t('boost_your_socialness') %></div>
+            <a href="http://www.koalike.io" target="_blank">
+              <div class="btn pulse bottom"><%= t('visit') %></div>
+            </a>
+          </div>
+          <div class="min-sixty">
+            <%= image_tag "http://miae.fr/resources/_wsb_489x312_gracias.jpg", class: "img-fit-parent centered" %>
+            MIAE
+            <div><%= t('feeding_south_america') %></div>
+            <a href="http://www.miae.fr" target="_blank">
+              <div class="btn pulse bottom"><%= t('visit') %></div>
+            </a>
+          </div>
+           <div class="min-sixty">
+            <p><%= t('want_to_be_added_to_this') %></p>
+            <p><%= t('prices_start') %></p>
+            <a href="#contact" target="blank">
+             <div class="btn pulse bottom"><%= t('contact_me') %>!!</div>
+            </a>
+          </div>
         </div>
       </div>
     </div>

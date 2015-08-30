@@ -15,12 +15,20 @@ en:
   user_level: "With results on user level..."
   corporate_level: "...and corporate level"
 
+  visit_those: "Visit those:"
+
+  boost_your_socialness: "Boost your socialness"
+  best_wine_school: "Best wine school in the world"
+  feeding_south_america: "Feeding empoverished children in South America for over 30 years"
+
   helping_hp: "Helping health profesionals"
   accept_any_debit: "accept any debit payment..."
-  anywhere: "anywhere"
+  anywhere: "...anywhere!"
+  coded_everything: "Coded the entire app."
 
   sign2pay1: "Changing payments on mobile..."
   sign2pay2: "one signature at a time"
+  front_end: "In charge of the front end"
 
   operational_manager: "Operational Manager"
 
@@ -43,11 +51,15 @@ en:
   geekster_egg: "Geekster Egg!"
   old: "old"
 
+  want_to_be_added_to_this: "Want your business to be featured in this section?"
+  prices_start: "Prices start at $999.999/month only ;-)"
+
   and: "and"
   living_in: "living in"
   antwerp: "Antwerp"
   developer: "Developer"
   thanks: "Thanks for visiting!"
+  contact_me: "Contact Me"
 
   I_also_do: "If I'm not in front of a computer, I'm most likely"
   playing_in_the_water: "playing in the water"
