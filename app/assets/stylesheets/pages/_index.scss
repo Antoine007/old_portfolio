@@ -19,6 +19,9 @@ h1 {
   padding-top:0.5em;
   padding-bottom:0.5em;
   font-weight: 400;
+  max-width:500px;
+  margin-right: auto;
+  margin-left: auto
 }
 .justify{
   text-align:justify;
@@ -34,44 +37,24 @@ h1 {
 footer {
   font-size:20px;
 }
-// /*========================================
-// Language buttons on home page
-// ========================================*/
-// .language{
-//   min-height: 4vh;
-//   width:50vh;
-//   right:3vw;
-//   position: absolute;
-//   display:block;
-// }
-// .language-row{
-//   min-height: 3vh;
-// }
 
-// .language_button {
-//   width: 35px;
-//   height: 35px;
-//   border-radius: 50px;
-//   padding: 5px;
-//   color: $white;
-//   font-style: italic;
-//   cursor: pointer;
-//   display: block;
-//   float: right;
-//   margin-right: 2%;
-//   // margin-top: -1vh;
-//   margin-top:2px;
-//   margin-bottom:1px;
-// }
-// .shown:hover {
-//   color: $black;
-//   background: rgba(255,255,255,0.25);
-// }
 
-// .shownOther {
-//   background: rgba(255,255,255,0.25);
-// }
-
+.language_button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  padding: 5px;
+  color: $white;
+  font-style: italic;
+  cursor: pointer;
+  display: block;
+  float: right;
+  margin-right: 2%;
+  // margin-top: -1vh;
+  margin-top:2px;
+  margin-bottom:1px;
+  z-index:101;
+}
 
 
 /*========================================
@@ -98,6 +81,7 @@ a:focus,
 a:active,
 a:hover {
   outline: 0;
+  color:$purple;
 }
 
 a:focus, a:hover {
@@ -126,9 +110,13 @@ a:focus, a:hover {
   margin-top:0.5em;
   margin-bottom:1em;
 }
+.btn-red{
+  background: $red;
+}
+
 .btn:hover{
   background:  $white;
-  color:$baby-blue;
+  color:$purple;
 }
 
 /* browser reset */

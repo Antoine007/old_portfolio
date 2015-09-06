@@ -1,45 +1,67 @@
 
-<div class="language mini-padded">
-    <%= link_to "fr", root_path(params[:locale]=:fr), :class => "language_button", id: "fr"%>
-    <%= link_to "en", root_path(params[:locale]=""), :class => "language_button", id: "en" %>
-    <%= link_to "es", root_path(params[:locale]=:es), :class => "language_button", id: "es" %>
-</div>
 
-<div class="title-image glow"></div>
-<div class="screen-size">
-  <div class="middle-of-div">
-    <h1 class="bigEntrance">
-      <%= t('app_title') %>
-    </h1>
-    <h3 class="mini-padded black-text-shadow">
-      <%= t('a_portfolio') %>
-    </h3>
+
+<!-- <div class="title-image glow"></div> -->
+<!-- <div class="screen-size">
+
+</div> -->
+
+<div class="homepage-hero-module">
+  <div class="video-container">
+    <div class="filter"></div>
+    <video autoplay loop class="fillWidth">
+        <source src="Holy-Cow.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        <source src="Holy-Cow.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video>
+    <div class="poster hidden">
+        <%= image_tag "Holy-Cow.jpg"%>
+    </div>
+
+    <!-- <div class="language mini-padded" id="top">
+        <%#= link_to "fr", root_path(params[:locale]=:fr), :class => "language_button", id: "fr"%>
+        <%#= link_to "en", root_path(params[:locale]=""), :class => "language_button", id: "en" %>
+        <%#= link_to "es", root_path(params[:locale]=:es), :class => "language_button", id: "es" %>
+    </div> -->
+
+    <div class="timeline">
+      <a href="#past"><%= t('past') %></a> | <a href="#current"><%= t('current') %></a> | <a href="#future"><%= t('future') %></a>
+    </div>
+
+    <div class="middle-of-div">
+
+      <h1 class="bigEntrance">
+        <%= t('app_title') %>
+      </h1>
+      <h3 class="mini-padded ">
+        <%= t('a_portfolio') %>
+      </h3>
+      <%= t('and_some_cows') %>
+    </div>
+
   </div>
 </div>
 
-<div class="black-text-shadow-simple timeline">
-  <a href="#past"><%= t('past') %></a> | <a href="#current"><%= t('current') %></a> | <a href="#future"><%= t('future') %></a>
-</div>
+
 
 
 <div class="container">
 
   <!-- current -->
   <div class="row top-margin" id="current">
-    <div class="col-xs-12">
+    <div class="col-xs-12 ">
       <div class="auto-rotate">
-        <div class="white min-sixty">
-          <h3 class="mini-padded black-text-shadow-simple">
+        <div class="white">
+          <h3 class="mini-padded ">
             <%= t('Sign2Heal') %>
           </h3>
-           <%= image_tag "http://magnyficent.com/magnyficent/images/sign2heal-patient-v.png", class: "img-fit-parent smaller centered" %>
+           <%= image_tag "sign2heal-patient-v.png", class: "img-fit-parent smaller centered" %>
            <div class="bottom">
              <p><%= t('Position') %></p>
              <p><%= t('lead_developer') %></p>
            </div>
         </div>
-        <div class="white min-sixty">
-          <h3 class="mini-padded black-text-shadow-simple">
+        <div class="white">
+          <h3 class="mini-padded">
             <%= t('functions') %>
           </h3>
            <p><%= t('helping_hp') %></p>
@@ -54,10 +76,10 @@
     </div>
   </div>
   <div class="row top-margin">
-    <div class="col-xs-12">
+    <div class="col-xs-12 ">
       <div class="auto-rotate">
-        <div class="white min-sixty">
-          <h3 class="mini-padded black-text-shadow-simple">
+        <div class="white">
+          <h3 class="mini-padded">
             <%= t('Sign2Pay') %>
           </h3>
            <%= image_tag "Sign2Pay.png", class: "img-fit-parent centered" %>
@@ -66,8 +88,8 @@
              <p><%= t('developer') %></p>
            </div>
         </div>
-        <div class="white min-sixty">
-          <h3 class="mini-padded black-text-shadow-simple">
+        <div class="white">
+          <h3 class="mini-padded">
             <%= t('functions') %>
           </h3>
            <div>
@@ -88,10 +110,10 @@
 
   <!-- past   -->
   <div class="row top-margin" id="past">
-    <div class="col-xs-12">
+    <div class="col-xs-12 ">
       <div class="auto-rotate">
-        <div class="min-sixty">
-          <h3 class="mini-padded black-text-shadow">
+        <div class="">
+          <h3 class="mini-padded ">
             <%= t('Macchiato') %>
           </h3>
           <%= image_tag "Macchiato.png", class: "img-fit-parent centered" %>
@@ -100,8 +122,8 @@
             <p><%= t('lead_developer') %></p>
           </div>
         </div>
-        <div class="min-sixty">
-          <h3 class="mini-padded black-text-shadow">
+        <div class="">
+          <h3 class="mini-padded ">
             <%= t('key_features') %>
           </h3>
           <p><%= t('full_personality_test') %></p>
@@ -116,10 +138,10 @@
     </div>
   </div>
    <div class="row top-margin">
-    <div class="col-xs-12">
+    <div class="col-xs-12 ">
       <div class="auto-rotate">
-        <div class="min-sixty">
-          <h3 class="mini-padded black-text-shadow">
+        <div class="">
+          <h3 class="mini-padded">
             <%= t('Castle_Bnb') %>
           </h3>
           <%= image_tag "CastleBnb.png", class: "img-fit-parent centered" %>
@@ -128,8 +150,8 @@
             <p><%= t('lead_developer') %></p>
           </div>
         </div>
-        <div class="min-sixty">
-          <h3 class="mini-padded black-text-shadow">
+        <div class="">
+          <h3 class="mini-padded ">
             <%= t('key_features') %>
           </h3>
           <p><%= t('5_day_coding_challenge') %></p>
@@ -142,10 +164,10 @@
     </div>
   </div>
    <div class="row top-margin">
-    <div class="col-xs-12">
+    <div class="col-xs-12 ">
       <div class="auto-rotate">
-        <div class="min-sixty">
-          <h3 class="mini-padded black-text-shadow">
+        <div class="">
+          <h3 class="mini-padded ">
             <%= t('Pierre_Sang') %>
           </h3>
           <%= image_tag "PierreSang.png", class: "img-fit-parent centered" %>
@@ -154,8 +176,8 @@
             <p><%= t('operational_manager') %></p>
           </div>
         </div>
-        <div class="min-sixty">
-          <h3 class="mini-padded black-text-shadow">
+        <div class="">
+          <h3 class="mini-padded ">
             <%= t('key_features') %>
           </h3>
           <p class="justify"><%= t('coordination_of') %> <%= t('team_ps') %> <%= t('a_great_online_presence') %></p>
@@ -167,23 +189,34 @@
     </div>
   </div>
 
+  <br>
+  <br>
+  <br>
 
-
+  <!-- THE FUTURE -->
   <div class="row" id="future">
-    <div class="col-xs-12">
+    <div class="col-xs-12 ">
       <div class="auto-rotate">
-        <div class="min-sixty white-border transp-black">
+        <div class="transp-black">
 
-          <h3 class="black-text-shadow">
+          <h3 class="">
             <%= t('the_future') %>
           </h3>
           <%= image_tag "http://magnyficent.com/magnyficent/images/air-s2h.png", class: "img-fit-parent centered" %>
         </div>
-        <div class="min-sixty transp-black" id="contact">
-          <h3 class="black-text-shadow">
+        <div class=" transp-black" id="contact">
+          <h3 class="">
             <%= t('lets_create_it') %>
           </h3>
-          <div class="bottom red"><a href="mailto:contact@magnyficent.com?subject=Hi Antoine!&body=Type something nice here! (or paste a cool GIF ;-) )"><%= t('get_in_touch_anytime') %></a></div>
+          <br>
+          <br>
+          <div class="bottom red">
+            <a href="mailto:contact@magnyficent.com?subject=Hi Antoine!&body=Type something nice here! (or paste a cool GIF ;-) )">
+              <div class="btn btn-red pulse bottom">
+                <%= t('get_in_touch_anytime') %>
+              </div>
+            </a>
+          </div>
           <!-- <div class="row full-width" style="position:absolute;bottom:0">
             <div class="col-xs-3 col-md-4"></div>
             <div class="col-xs-6 col-md-4">
@@ -196,9 +229,9 @@
     </div>
   </div>
 
-  <div class="row" id="my-  friends">
+  <div class="row" id="friends">
     <div class="col-xs-12">
-      <h3 class="black-text-shadow">
+      <h3 class="">
             <%= t('visit_those') %>
           </h3>
         <div class="auto-rotate">
@@ -210,10 +243,10 @@
             </a>
           </div>
           <div class="min-sixty">
-            <%= image_tag "http://www.koalike.io/img.png", class: "img-fit-parent centered" %>
+            <%= image_tag "koalike.png", class: "img-fit-parent centered" %>
             Koalike
             <div><%= t('boost_your_socialness') %></div>
-            <a href="http://www.koalike.io" target="_blank">
+            <a href="http://www.koalike.com" target="_blank">
               <div class="btn pulse bottom"><%= t('visit') %></div>
             </a>
           </div>
@@ -229,7 +262,7 @@
             <p><%= t('want_to_be_added_to_this') %></p>
             <p><%= t('prices_start') %></p>
             <a href="#contact" target="blank">
-             <div class="btn pulse bottom"><%= t('contact_me') %>!!</div>
+             <div class="btn btn-red pulse bottom"><%= t('contact_me') %>!!</div>
             </a>
           </div>
         </div>
@@ -299,7 +332,8 @@
   <br>
 
   <div class="row">
-    <div class="col-xs-12 white-border">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10 white-border">
       <h3><%= t('biography') %></h3>
       <div class="justify">
         <p><%= t('biography_text') %></p>
@@ -310,58 +344,37 @@
       <p><%= t('my_age') %></p>
       <p class="time">
         <% t = Time.at(Time.now - Time.new(1988,1,18,12,00)) %>
-        <div class="time"><%= t.year - 1970 %> <%= t('years') %> <%= t.month %> <%= t('months') %> <%= t.day %> <%= t('days') %> <%= t.hour %> <%= t('hours') %> <%= t.min %> <%= t('minutes') %> & <%= t.sec %> <%= t('seconds') %> <%= t('old') %>.</div>
+        <div class="time"><%= t.year - 1970 %> <%= t('years') %> <%= t.month %> <%= t('months') %> <%= t.day %> <%= t('days') %> <%= t.hour %> <%= t('hours') %> <%= t.min %> <%= t('minutes') %> & <%= t.sec %> <%= t('seconds') %> <%= t('old') %></div>
       </p>
       <p><%= t('and') %> <%= t('living_in') %> <%= t('antwerp') %></p>
       <hr>
       <p><%= t('I_also_do') %>: </p>
-      <p><a href="http://www.instagram.com/ketogenicallday" target="_blank"><%= t('eating') %></a>, <a href="http://www.magnyficent.com/drinking"><%= t('drinking') %></a>, <a href="http://www.magnyficent.com/skiing"><%= t('skiing') %></a> or <a href="http://www.magnyficent.com/playing"><%= t('playing_in_the_water') %></a></p>
+      <p><a href="http://www.instagram.com/ketogenicallday" target="_blank"><%= t('eating') %></a>, <a href="http://www.magnyficent.com/images/drinking.jpg"><%= t('drinking') %></a>, <a href="http://www.magnyficent.com/images/skiing.jpg"><%= t('skiing') %></a> or <a href="http://www.magnyficent.com/images/water.jpg"><%= t('playing_in_the_water') %></a></p>
       <p>-</p>
       <p><%= t('thanks') %></p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xs-12">
-
-    </div>
-  </div>
-  <!-- <div class="row">
-    <div class="col-xs-12">
-      <h3><%#= t('no_commission').upcase %></h3>
-    </div>
-  </div> -->
-  <!-- <div class="row">
-    <div class="col-xs-12 transp-black">
-      <h3 class="bottom-padded"><%#= t('one_month_free') %></h3>
-    </div>
-  </div> -->
-
-<%#= javascript_tag do %>
-<!--
-  /*=================================================
-  hide the languages buttons not needed
-  =================================================*/
-
-  $(document).on('ready', function() {
-    $('.language_button').toggle().addClass('hidden');
-    var locale = <%#= I18n.locale.to_s %>;
-    $(locale).toggle().addClass('shown').removeClass('hidden');
-    $('.shown').click(function(){
-      $('.hidden').fadeIn().addClass('shownOther').removeClass('hidden');
-      setTimeout(function(){ $('.shownOther').fadeOut().addClass('hidden').removeClass('shownOther'); }, 2000);
-      console.log('click')
-    });
-
-  });
-
-<%# end %> -->
+  <div class="col-xs-1"></div>
+</div>
 
 <%= javascript_tag do %>
+
+  /*=================================================
+  slick slider
+  =================================================*/
+
   $(document).ready(function(){
    var container_width = $('.container').width();
-   $('.full-square-image').height(container_width);
+   if (container_width > 400 ){
+     var arrowness = true
+     $('.full-square-image').height(container_width - 60);
+   }else{
+     var arrowness = false
+     $('.full-square-image').height(container_width);
+   }
+
    $('.auto-rotate').slick({
-      arrows: false,
+      arrows: arrowness,
       dots: true,
       infinite: true,
       speed: 500,
@@ -370,7 +383,7 @@
       mobileFirst: true,
       cssEase: 'linear'
    });
-   });
+  });
 <% end %>
 <%= javascript_tag do %>
  <!--  $(document).ready(function(){
@@ -383,6 +396,75 @@
     },1000);
   }); -->
 <% end %>
+<%= javascript_tag do %>
+
+    /*=================================================
+  coverr
+  =================================================*/
+
+ $( document ).ready(function() {
+
+     scaleVideoContainer();
+
+     initBannerVideoSize('.video-container .poster img');
+     initBannerVideoSize('.video-container .filter');
+     initBannerVideoSize('.video-container video');
+
+     $(window).on('resize', function() {
+         scaleVideoContainer();
+         scaleBannerVideoSize('.video-container .poster img');
+         scaleBannerVideoSize('.video-container .filter');
+         scaleBannerVideoSize('.video-container video');
+     });
+
+ });
+
+ function scaleVideoContainer() {
+
+     var height = $(window).height() + 5;
+     var unitHeight = parseInt(height) + 'px';
+     $('.homepage-hero-module').css('height',unitHeight);
+
+ }
+
+ function initBannerVideoSize(element){
+
+     $(element).each(function(){
+         $(this).data('height', $(this).height());
+         $(this).data('width', $(this).width());
+     });
+
+     scaleBannerVideoSize(element);
+
+ }
+
+ function scaleBannerVideoSize(element){
+
+     var windowWidth = $(window).width(),
+     windowHeight = $(window).height() + 5,
+     videoWidth,
+     videoHeight;
+
+     console.log(windowHeight);
+
+     $(element).each(function(){
+         var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+         $(this).width(windowWidth);
+
+         if(windowWidth < 1000){
+             videoHeight = windowHeight;
+             videoWidth = videoHeight / videoAspectRatio;
+             $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+             $(this).width(videoWidth).height(videoHeight);
+         }
+
+         $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+     });
+ }
+<% end %>
  <%#= javascript_tag do %>
    <!-- function pulseSeconds() {
 #       var secs = <%= t.sec %>
@@ -391,15 +473,15 @@
 
 #   setInterval(pulseSeconds, 1000); -->
   <%# end %>
-<%= javascript_tag do %>
+<%#= javascript_tag do %>
 
-  /*=================================================
+ <!--  /*=================================================
   hide the languages buttons not needed
   =================================================*/
 
   $(document).on('ready', function() {
     $('.language_button').toggle().addClass('hidden');
-    var locale = <%= I18n.locale.to_s %>;
+    var locale = <%#= I18n.locale.to_s %>;
     $(locale).toggle().addClass('shown').removeClass('hidden');
     $('.shown').click(function(){
       $('.hidden').fadeIn().addClass('shownOther').removeClass('hidden');
@@ -408,8 +490,8 @@
       }, 2000);
       return false;
     });
-  });
+  }); -->
 
-<% end %>
+<%# end %>
 
 
