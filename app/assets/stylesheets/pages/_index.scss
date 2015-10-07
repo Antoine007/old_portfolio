@@ -9,6 +9,7 @@ html body {
   background: linear-gradient(to right bottom, $purple 0%, $red 100%);
    // -webkit-font-size: 23px;
    // -webkit-font-smoothing: subpixel-antialiased;
+  position:relative;
 }
 
 html body > .container {
