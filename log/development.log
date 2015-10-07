@@ -23842,6 +23842,271 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 235ms (Views: 234.6ms | ActiveRecord: 0.0ms)
 
 
+<<<<<<< HEAD
+Started GET "/" for ::1 at 2015-10-07 23:49:26 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (306.8ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 1653ms (Views: 1270.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/slick_slider.self-686c56cbd35e601df5523964f0f961a846b554fdf33b8652408a6f9e991b2730.js?body=1" for ::1 at 2015-10-07 23:49:28 +0200
+
+
+Started GET "/" for ::1 at 2015-10-07 23:51:00 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (63.6ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 331ms (Views: 331.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/coverr.self-2ff40d2677c2f2c3b4f6f3cfc1dec2679b4a4bc69dbf828eb4cedc2e0ed9102d.js?body=1" for ::1 at 2015-10-07 23:51:01 +0200
+
+
+Started GET "/" for ::1 at 2015-10-07 23:51:18 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (69.8ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 330ms (Views: 329.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/application.self-e5a47b0df1f932a21be55fc46b11044b5c050314dc747d13d3e18850c7965394.css?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/bootstrap-switch.self-7094881291d5662bf6fbb008325795dcc2320c64df16bc411f851fb764b1470c.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/coverr.self-06f4838f88ed59fce3cef30dca725bb9f3d6f0165929568e457cae406189d14f.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/footer.self-3172d4f59908a9382cdcf0f87dde7ccda053f94de4d1db818e64be1fe0e491a9.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/slick_slider.self-686c56cbd35e601df5523964f0f961a846b554fdf33b8652408a6f9e991b2730.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/styling.self-73351e54b4a0d9dad8adbf7474dd03977b17f7ff4495b20df8bc963ab600c193.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/Holy-Cow-81db70919d6813973a42cb4513667724868ebcd8788dca995ede8212f4c66844.jpg" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/sign2heal-patient-v-82d011a41054a4c5b6ac5010bcc078cbfbb5385e5059534418703e0aba003de6.png" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/Sign2Pay-1bbd50464d4f270afb929c440787ec7f0444cd31e1ad0ecdf88fe32575782a40.png" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/Macchiato-252f75311340a36cf5e9194d3c17097079fb00a891a18692d58879cbd417314d.png" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/CastleBnb-369c7201628eb98326a1e12a2674c34764792d9c414f457ab106d65ac93efcce.png" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/o-chateau-e831aa7380e13350179719bac41bc87c7afb9bbb7e601a1e67d172aa580b426b.png" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/PierreSang-85e8c8833dce84b89aa6df5a849a52b5622772092b884d23b8e872b1dc5d94d9.png" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont-aadc3580d2b64ff5a7e6f1425587db4e8b033efcbf8f5c332ca52a5ed580c87c.woff2" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/koalike-f945eb9e6319658775ce6ca9c7f67bfb559c342acf8293c22acb7f851be36fb1.png" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/ajax-loader-e7b44c86b050fca766a96ddac2d0932af0126da6f2305280342d909168dcce6b.gif" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/assets/slick-26726bac4060abb1226e6ceebc1336e84930fe7a7af1b3895a109d067f5b5dcc.woff" for ::1 at 2015-10-07 23:51:19 +0200
+
+
+Started GET "/" for ::1 at 2015-10-07 23:51:34 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (50.0ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 188ms (Views: 187.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e5a47b0df1f932a21be55fc46b11044b5c050314dc747d13d3e18850c7965394.css?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-10-07 23:51:34 +0200
+
+
+Started GET "/assets/bootstrap-switch.self-7094881291d5662bf6fbb008325795dcc2320c64df16bc411f851fb764b1470c.js?body=1" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/coverr.self-06f4838f88ed59fce3cef30dca725bb9f3d6f0165929568e457cae406189d14f.js?body=1" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/footer.self-3172d4f59908a9382cdcf0f87dde7ccda053f94de4d1db818e64be1fe0e491a9.js?body=1" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/slick_slider.self-686c56cbd35e601df5523964f0f961a846b554fdf33b8652408a6f9e991b2730.js?body=1" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/styling.self-73351e54b4a0d9dad8adbf7474dd03977b17f7ff4495b20df8bc963ab600c193.js?body=1" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/Holy-Cow-81db70919d6813973a42cb4513667724868ebcd8788dca995ede8212f4c66844.jpg" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/sign2heal-patient-v-82d011a41054a4c5b6ac5010bcc078cbfbb5385e5059534418703e0aba003de6.png" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/PierreSang-85e8c8833dce84b89aa6df5a849a52b5622772092b884d23b8e872b1dc5d94d9.png" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/Sign2Pay-1bbd50464d4f270afb929c440787ec7f0444cd31e1ad0ecdf88fe32575782a40.png" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/Macchiato-252f75311340a36cf5e9194d3c17097079fb00a891a18692d58879cbd417314d.png" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/CastleBnb-369c7201628eb98326a1e12a2674c34764792d9c414f457ab106d65ac93efcce.png" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/o-chateau-e831aa7380e13350179719bac41bc87c7afb9bbb7e601a1e67d172aa580b426b.png" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont-aadc3580d2b64ff5a7e6f1425587db4e8b033efcbf8f5c332ca52a5ed580c87c.woff2" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/koalike-f945eb9e6319658775ce6ca9c7f67bfb559c342acf8293c22acb7f851be36fb1.png" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/slick-26726bac4060abb1226e6ceebc1336e84930fe7a7af1b3895a109d067f5b5dcc.woff" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/ajax-loader-e7b44c86b050fca766a96ddac2d0932af0126da6f2305280342d909168dcce6b.gif" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/assets/am_favicon/favicon-eb51165855ef8faa94298c917ae720bff3e82c3191d759658b4b36122a8ee575.ico" for ::1 at 2015-10-07 23:51:35 +0200
+
+
+Started GET "/" for ::1 at 2015-10-07 23:52:58 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (85.9ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 367ms (Views: 366.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/coverr.self-c4d5a4da920305da2afee4c5abf950e2fc351823fd2f759044594ab89db2a712.js?body=1" for ::1 at 2015-10-07 23:52:59 +0200
+
+
+Started GET "/" for ::1 at 2015-10-07 23:53:11 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (78.9ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 368ms (Views: 368.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/coverr.self-649be7768ddc93118608223ac97807fd50f01887c4984de9ae149ae820d6f6ad.js?body=1" for ::1 at 2015-10-07 23:53:11 +0200
+
+
+Started GET "/" for ::1 at 2015-10-07 23:54:25 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (66.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 3715ms (Views: 3714.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-909e9a8906b85e483ccab770fcfb4ac1989231c02ba6a828ca61384f4aad6e71.css?body=1" for ::1 at 2015-10-07 23:54:29 +0200
+=======
 Started GET "/" for ::1 at 2015-10-07 22:29:45 +0200
 Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (350.6ms)
@@ -24959,3 +25224,4 @@ Started GET "/assets/slick-26726bac4060abb1226e6ceebc1336e84930fe7a7af1b3895a109
 
 
 Started GET "/assets/ajax-loader-e7b44c86b050fca766a96ddac2d0932af0126da6f2305280342d909168dcce6b.gif" for ::1 at 2015-10-07 23:15:31 +0200
+>>>>>>> master

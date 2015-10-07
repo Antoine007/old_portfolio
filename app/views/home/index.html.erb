@@ -1,26 +1,41 @@
 
+<!-- <div class="title-image glow"></div> -->
+<!-- <div class="screen-size">
 
-<div class="title-image">
-  <!-- <div class="language mini-padded" id="top">
-      <%#= link_to "fr", root_path(params[:locale]=:fr), :class => "language_button", id: "fr"%>
-      <%#= link_to "en", root_path(params[:locale]=""), :class => "language_button", id: "en" %>
-      <%#= link_to "es", root_path(params[:locale]=:es), :class => "language_button", id: "es" %>
-  </div> -->
+</div> -->
 
-  <div class="timeline">
-    <a href="#past"><%= t('past') %></a> | <a href="#current"><%= t('current') %></a> | <a href="#future"><%= t('future') %></a>
+<div class="homepage-hero-module">
+  <div class="video-container">
+    <div class="filter"></div>
+    <video autoplay loop class="fillWidth">
+        <source src="Holy-Cow.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        <source src="Holy-Cow.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+    </video>
+    <div class="poster hidden">
+        <%= image_tag "Holy-Cow.jpg"%>
+    </div>
+
+    <!-- <div class="language mini-padded" id="top">
+        <%#= link_to "fr", root_path(params[:locale]=:fr), :class => "language_button", id: "fr"%>
+        <%#= link_to "en", root_path(params[:locale]=""), :class => "language_button", id: "en" %>
+        <%#= link_to "es", root_path(params[:locale]=:es), :class => "language_button", id: "es" %>
+    </div> -->
+
+    <div class="timeline">
+      <a href="#past"><%= t('past') %></a> | <a href="#current"><%= t('current') %></a> | <a href="#future"><%= t('future') %></a>
+    </div>
+
+    <div class="middle-of-div">
+
+      <h1 class="bigEntrance">
+        <%= t('app_title') %>
+      </h1>
+      <h3 class="mini-padded ">
+        <%= t('a_portfolio') %>
+      </h3>
+      <%= t('and_some_cows') %>
+    </div>
   </div>
-
-  <div class="middle-of-div">
-
-    <h1 class="bigEntrance">
-      <%= t('app_title') %>
-    </h1>
-    <h3 class="mini-padded ">
-      <%= t('a_portfolio') %>
-    </h3>
-  </div>
-
 </div>
 
 <div class="container">
@@ -195,13 +210,6 @@
               </div>
             </a>
           </div>
-          <!-- <div class="row full-width" style="position:absolute;bottom:0">
-            <div class="col-xs-3 col-md-4"></div>
-            <div class="col-xs-6 col-md-4">
-              <%#= link_to t("discover_sign2"), "https://www.sign2pay.com", :class => "full-width btn btn-size-a btn-dark btn-round"%>
-            </div>
-            <div class="col-xs-3 col-md-4"></div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -274,25 +282,16 @@
     </div>
     <div class="col-xs-1"></div>
   </div>
+<<<<<<< HEAD
+=======
+
+</div>
+>>>>>>> master
 
 </div>
 
-<%= javascript_tag do %>
-
-  /*=================================================
-  slick slider
-  =================================================*/
-
-  $(document).ready(function(){
-   var container_width = $('.container').width();
-   if (container_width > 400 ){
-     var arrowness = true
-     $('.full-square-image').height(container_width - 60);
-   }else{
-     var arrowness = false
-     $('.full-square-image').height(container_width);
-   }
-
+<<<<<<< HEAD
+=======
    $('.auto-rotate').slick({
       arrows: arrowness,
       dots: true,
@@ -305,6 +304,7 @@
    });
   });
 <% end %>
+>>>>>>> master
 <%#= javascript_tag do %>
  <!--  $(document).ready(function(){
     setInterval( function(){
@@ -316,14 +316,22 @@
     },1000);
   }); -->
 <%# end %>
+<<<<<<< HEAD
+<%#= javascript_tag do %>
+=======
  <%#= javascript_tag do %>
+>>>>>>> master
    <!-- function pulseSeconds() {
 #       var secs = <%= t.sec %>
 #       $('.seconds').fadeOut(500, function(){ $(this).text(secs); $(this).delay(100).fadeIn(500); });
 #   }
 
 #   setInterval(pulseSeconds, 1000); -->
+<<<<<<< HEAD
+<%# end %>
+=======
   <%# end %>
+>>>>>>> master
 
 <%#= javascript_tag do %>
  <!--  /*=================================================
