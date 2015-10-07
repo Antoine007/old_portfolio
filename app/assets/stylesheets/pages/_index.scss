@@ -9,11 +9,13 @@ html body {
   background: linear-gradient(to right bottom, $purple 0%, $red 100%);
    // -webkit-font-size: 23px;
    // -webkit-font-smoothing: subpixel-antialiased;
+  position:relative;
 }
 
 html body > .container {
   min-height: 98vh;
 }
+
 h1 {
   background: $transp-black;
   padding-top:0.5em;
@@ -54,18 +56,6 @@ footer {
   margin-top:2px;
   margin-bottom:1px;
   z-index:101;
-}
-
-
-/*========================================
-phone input
-========================================*/
-
-.intl-tel-input {
-  color: $black;
-}
-.clinician-input {
-  color: $black;
 }
 
 /*========================================

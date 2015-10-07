@@ -1,51 +1,29 @@
 
 
+<div class="title-image">
+  <!-- <div class="language mini-padded" id="top">
+      <%#= link_to "fr", root_path(params[:locale]=:fr), :class => "language_button", id: "fr"%>
+      <%#= link_to "en", root_path(params[:locale]=""), :class => "language_button", id: "en" %>
+      <%#= link_to "es", root_path(params[:locale]=:es), :class => "language_button", id: "es" %>
+  </div> -->
 
-<!-- <div class="title-image glow"></div> -->
-<!-- <div class="screen-size">
-
-</div> -->
-
-<div class="homepage-hero-module">
-  <div class="video-container">
-    <div class="filter"></div>
-    <video autoplay loop class="fillWidth">
-        <source src="Holy-Cow.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-        <source src="Holy-Cow.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-    </video>
-    <div class="poster hidden">
-        <%= image_tag "Holy-Cow.jpg"%>
-    </div>
-
-    <!-- <div class="language mini-padded" id="top">
-        <%#= link_to "fr", root_path(params[:locale]=:fr), :class => "language_button", id: "fr"%>
-        <%#= link_to "en", root_path(params[:locale]=""), :class => "language_button", id: "en" %>
-        <%#= link_to "es", root_path(params[:locale]=:es), :class => "language_button", id: "es" %>
-    </div> -->
-
-    <div class="timeline">
-      <a href="#past"><%= t('past') %></a> | <a href="#current"><%= t('current') %></a> | <a href="#future"><%= t('future') %></a>
-    </div>
-
-    <div class="middle-of-div">
-
-      <h1 class="bigEntrance">
-        <%= t('app_title') %>
-      </h1>
-      <h3 class="mini-padded ">
-        <%= t('a_portfolio') %>
-      </h3>
-      <%= t('and_some_cows') %>
-    </div>
-
+  <div class="timeline">
+    <a href="#past"><%= t('past') %></a> | <a href="#current"><%= t('current') %></a> | <a href="#future"><%= t('future') %></a>
   </div>
+
+  <div class="middle-of-div">
+
+    <h1 class="bigEntrance">
+      <%= t('app_title') %>
+    </h1>
+    <h3 class="mini-padded ">
+      <%= t('a_portfolio') %>
+    </h3>
+  </div>
+
 </div>
 
-
-
-
 <div class="container">
-
   <!-- current -->
   <div class="row top-margin" id="current">
     <div class="col-xs-12 ">
@@ -137,7 +115,7 @@
       </div>
     </div>
   </div>
-   <div class="row top-margin">
+  <div class="row top-margin">
     <div class="col-xs-12 ">
       <div class="auto-rotate">
         <div class="">
@@ -163,7 +141,7 @@
       </div>
     </div>
   </div>
-   <div class="row top-margin">
+  <div class="row top-margin">
     <div class="col-xs-12 ">
       <div class="auto-rotate">
         <div class="">
@@ -211,7 +189,7 @@
           <br>
           <br>
           <div class="bottom red">
-            <a href="mailto:contact@magnyficent.com?subject=Hi Antoine!&body=Type something nice here! (or paste a cool GIF ;-) )">
+            <a href="mailto:life_is@magnyficent.com?subject=Hi Antoine!&body=Type something nice here! (or paste a cool GIF ;-) )">
               <div class="btn btn-red pulse bottom">
                 <%= t('get_in_touch_anytime') %>
               </div>
@@ -232,101 +210,42 @@
   <div class="row" id="friends">
     <div class="col-xs-12">
       <h3 class="">
-            <%= t('visit_those') %>
-          </h3>
-        <div class="auto-rotate">
-          <div class="min-sixty">
-            <%= image_tag "o-chateau.png", class: "img-fit-parent centered" %>
-            <div><%= t('best_wine_school') %></div>
-            <a href="http://www.o-chateau.com" target="_blank">
-              <div class="btn pulse bottom"><%= t('visit') %></div>
-            </a>
-          </div>
-          <div class="min-sixty">
-            <%= image_tag "koalike.png", class: "img-fit-parent centered" %>
-            Koalike
-            <div><%= t('boost_your_socialness') %></div>
-            <a href="http://www.koalike.com" target="_blank">
-              <div class="btn pulse bottom"><%= t('visit') %></div>
-            </a>
-          </div>
-          <div class="min-sixty">
-            <%= image_tag "http://miae.fr/resources/_wsb_489x312_gracias.jpg", class: "img-fit-parent centered" %>
-            MIAE
-            <div><%= t('feeding_south_america') %></div>
-            <a href="http://www.miae.fr" target="_blank">
-              <div class="btn pulse bottom"><%= t('visit') %></div>
-            </a>
-          </div>
-           <div class="min-sixty">
-            <p><%= t('want_to_be_added_to_this') %></p>
-            <p><%= t('prices_start') %></p>
-            <a href="#contact" target="blank">
-             <div class="btn btn-red pulse bottom"><%= t('contact_me') %>!!</div>
-            </a>
-          </div>
+        <%= t('visit_those') %>
+      </h3>
+      <div class="auto-rotate">
+        <div class="min-sixty">
+          <%= image_tag "o-chateau.png", class: "img-fit-parent centered" %>
+          <div><%= t('best_wine_school') %></div>
+          <a href="http://www.o-chateau.com" target="_blank">
+            <div class="btn pulse bottom"><%= t('visit') %></div>
+          </a>
+        </div>
+        <div class="min-sixty">
+          <%= image_tag "koalike.png", class: "img-fit-parent centered" %>
+          Koalike
+          <div><%= t('boost_your_socialness') %></div>
+          <a href="http://www.koalike.com" target="_blank">
+            <div class="btn pulse bottom"><%= t('visit') %></div>
+          </a>
+        </div>
+        <div class="min-sixty">
+          <%= image_tag "http://miae.fr/resources/_wsb_489x312_gracias.jpg", class: "img-fit-parent centered" %>
+          MIAE
+          <div><%= t('feeding_south_america') %></div>
+          <a href="http://www.miae.fr" target="_blank">
+            <div class="btn pulse bottom"><%= t('visit') %></div>
+          </a>
+        </div>
+        <div class="min-sixty">
+          <p><%= t('want_to_be_added_to_this') %></p>
+          <p><%= t('prices_start') %></p>
+          <a href="#contact" target="blank">
+           <div class="btn btn-red pulse bottom"><%= t('contact_me') %>!!</div>
+          </a>
         </div>
       </div>
     </div>
   </div>
-
-
-
-
-  <!-- <br>
-  <br>
-  <div class="row">
-    <div class="row transp-black">
-      <div class="col-xs-12">
-        <div class="row">
-          <div class="col-xs-6"><b><%#= t('terminal') %></b></div>
-          <div class="col-xs-6"><b><%#= t('app_title') %></b></div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="col-xs-12 thirty-perc">
-        <%# 8.times do |x| %>
-          <div class="black-border">
-            <div class="row white">
-              <div>
-                <h4 class="bg-blue rounded-inline">
-                  <%#= t('column_a_'+x.to_s) %>
-                </h4>
-              </div>
-            </div>
-            <div class="row white">
-              <div class="col-xs-6"><%#= t('column_b_'+x.to_s) %></div>
-              <div class="col-xs-6"><%#= t('column_c_'+x.to_s) %></div>
-            </div>
-            <div class="row white">
-              <div class="col-xs-6">
-                <%#= image_tag( t('column_d_'+x.to_s), class: "icon") %>
-              </div>
-              <div class="col-xs-6">
-                <%#= image_tag("valid.png", class: "icon") %>
-              </div>
-            </div>
-          </div>
-        <%# end %>
-          <div class="row">
-            <div class="mini-padded">
-              <h3 class="rounded-inline">
-                <%#= t('final_score') %>
-              </h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-4 bg-red" style="border-radius:10px"><%#= "12.5%" %></div>
-            <div class="col-xs-2"></div>
-            <div class="col-xs-4 bg-green" style="border-radius:10px"><%#= "100%" %></div>
-            <div class="col-xs-1"></div>
-          </div>
-      </div>
-    </div>
-  </div>
- -->
 
   <br>
   <br>
@@ -353,8 +272,9 @@
       <p>-</p>
       <p><%= t('thanks') %></p>
     </div>
+    <div class="col-xs-1"></div>
   </div>
-  <div class="col-xs-1"></div>
+
 </div>
 
 <%= javascript_tag do %>
@@ -385,7 +305,7 @@
    });
   });
 <% end %>
-<%= javascript_tag do %>
+<%#= javascript_tag do %>
  <!--  $(document).ready(function(){
     setInterval( function(){
       $(".seconds").css("opacity", 0);
@@ -395,76 +315,7 @@
       },1000);
     },1000);
   }); -->
-<% end %>
-<%= javascript_tag do %>
-
-    /*=================================================
-  coverr
-  =================================================*/
-
- $( document ).ready(function() {
-
-     scaleVideoContainer();
-
-     initBannerVideoSize('.video-container .poster img');
-     initBannerVideoSize('.video-container .filter');
-     initBannerVideoSize('.video-container video');
-
-     $(window).on('resize', function() {
-         scaleVideoContainer();
-         scaleBannerVideoSize('.video-container .poster img');
-         scaleBannerVideoSize('.video-container .filter');
-         scaleBannerVideoSize('.video-container video');
-     });
-
- });
-
- function scaleVideoContainer() {
-
-     var height = $(window).height() + 5;
-     var unitHeight = parseInt(height) + 'px';
-     $('.homepage-hero-module').css('height',unitHeight);
-
- }
-
- function initBannerVideoSize(element){
-
-     $(element).each(function(){
-         $(this).data('height', $(this).height());
-         $(this).data('width', $(this).width());
-     });
-
-     scaleBannerVideoSize(element);
-
- }
-
- function scaleBannerVideoSize(element){
-
-     var windowWidth = $(window).width(),
-     windowHeight = $(window).height() + 5,
-     videoWidth,
-     videoHeight;
-
-     console.log(windowHeight);
-
-     $(element).each(function(){
-         var videoAspectRatio = $(this).data('height')/$(this).data('width');
-
-         $(this).width(windowWidth);
-
-         if(windowWidth < 1000){
-             videoHeight = windowHeight;
-             videoWidth = videoHeight / videoAspectRatio;
-             $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-
-             $(this).width(videoWidth).height(videoHeight);
-         }
-
-         $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-
-     });
- }
-<% end %>
+<%# end %>
  <%#= javascript_tag do %>
    <!-- function pulseSeconds() {
 #       var secs = <%= t.sec %>
@@ -473,8 +324,8 @@
 
 #   setInterval(pulseSeconds, 1000); -->
   <%# end %>
-<%#= javascript_tag do %>
 
+<%#= javascript_tag do %>
  <!--  /*=================================================
   hide the languages buttons not needed
   =================================================*/
@@ -491,7 +342,6 @@
       return false;
     });
   }); -->
-
 <%# end %>
 
 
