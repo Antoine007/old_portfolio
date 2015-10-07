@@ -6,16 +6,12 @@
 .title-image {
   background: url('http://thepaperwall.com/wallpapers/digital_artwork/big/big_cd087e49e35bb8ad8602e429dcdae08cff226bfc.jpg');
   background-size: 100% 100%;
-  // min-height:50vh;
   width:100vw;
   height:100vh;
-  // max-width:1500px;
   top:0;
   left:0;
-  margin: 0;
+  margin:0;
   display:block;
-  position:absolute;
-  z-index:-1;
 }
 
 .full-square-image {
@@ -36,7 +32,6 @@
 .timeline {
   top:0;
   color:$purple;
-  position:relative;
   z-index:1000;
 }
 .timeline a{
