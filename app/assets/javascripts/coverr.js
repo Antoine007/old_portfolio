@@ -1,4 +1,4 @@
-// COVERR
+//jQuery is required to run this code
 $( document ).ready(function() {
 
     scaleVideoContainer();
@@ -43,21 +43,21 @@ function scaleBannerVideoSize(element){
     videoHeight;
 
     console.log(windowHeight);
+    console.log(videoHeight);
 
     $(element).each(function(){
-        var videoAspectRatio = $(this).data('height')/$(this).data('width');
+      var videoAspectRatio = $(this).data('height')/$(this).data('width');
 
-        $(this).width(windowWidth);
+      $(this).width(windowWidth);
 
-        if(windowWidth < 1000){
-            videoHeight = windowHeight;
-            videoWidth = videoHeight / videoAspectRatio;
-            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+      if(windowWidth < 1000){
+        videoHeight = windowHeight;
+        videoWidth = videoHeight / videoAspectRatio;
+        $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
 
-            $(this).width(videoWidth).height(videoHeight);
-        }
+        $(this).width(videoWidth).height(videoHeight);
+      }
 
-        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-
+      $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
     });
 }
