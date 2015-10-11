@@ -1,0 +1,94 @@
+.logo{
+  position:absolute;
+  // width: 50%;
+  // height: 50vh;
+  margin-left: 40%;
+  background: #FFF;
+}
+.wrapper {
+  display: inline;
+  position: absolute;
+}
+
+#top {
+  left: 47.5px;
+}
+
+#left {
+  top: 75.5px;
+  margin-left: 0.5px;
+}
+
+#right {
+  top: 75.5px;
+  left: 87px;
+}
+
+.t {
+  width: 0;
+  height: 0;
+  /* to make equilateral triangle: (border-left-width + border-right-width) * 0.866% = border-bottom-width*/
+}
+
+.xl {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 69.28px solid #000;
+}
+
+.l {
+  position: relative;
+  border-left: 38px solid transparent;
+  border-right: 38px solid transparent;
+  border-bottom: 65.8px solid pink;
+  bottom: -3px;
+  left: -38px;
+}
+
+.s {
+  position: relative;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 13.86px solid black;
+  bottom: -53px;
+  left: -8px;
+}
+
+.xs {
+  position: relative;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 12.12px solid white;
+  bottom: -2px;
+  left: -7px;
+}
+
+.name {
+  position: relative;
+  margin-left: 82px;
+  top: -14.5px;
+}
+
+.topxl {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.leftxl {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.rightxl {
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}

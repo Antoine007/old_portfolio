@@ -59,11 +59,15 @@ Placement and padding
   height:100vh;
   width:100%;
 }
+.screen-height{
+  height:100vh;
+}
 .middle-of-div{
-  top:35%;
+  margin-top:25%;
   min-height:10%;
   position: relative;
   vertical-align: middle;
+  z-index: 1000;
 }
 .max-one-screen{
   max-height: 95vh;

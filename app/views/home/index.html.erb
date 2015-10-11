@@ -1,20 +1,20 @@
-
+<div class="container">
 <!-- <div class="title-image glow"></div> -->
-<!-- <div class="screen-size">
+<div class="row screen-height">
 
-</div> -->
+
 <!-- "Holy-Cow.mp4" -->
 
-<div class="homepage-hero-module">
+<!-- <div class="homepage-hero-module">
   <div class="video-container">
     <div class="filter"></div>
     <video autoplay loop class="fillWidth">
       <source src="Holy-Cow.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
       <source src="Holy-Cow.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
     </video>
-    <div class="poster hidden">
-        <img src="images/Holy-Cow.jpg" alt="">
-    </div>
+    <div class="poster hidden"> -->
+        <%#= image_tag("Holy-Cow.jpg") %>
+    <!-- </div> -->
 
 
     <!-- <div class="language mini-padded" id="top">
@@ -23,24 +23,32 @@
         <%#= link_to "es", root_path(params[:locale]=:es), :class => "language_button", id: "es" %>
     </div> -->
 
-    <div class="timeline">
-      <a href="#past"><%= t('past') %></a> | <a href="#current"><%= t('current') %></a> | <a href="#future"><%= t('future') %></a>
-    </div>
+  <div class="timeline">
+    <a href="#past"><%= t('past') %></a> | <a href="#current"><%= t('current') %></a> | <a href="#future"><%= t('future') %></a>
+  </div>
 
+  <div class="col-xs-0 col-md-3"></div>
+  <div class="col-xs-12 col-md-6">
     <div class="middle-of-div">
 
-      <h1 class="bigEntrance">
-        <%= t('app_title') %>
-      </h1>
-      <h3 class="mini-padded ">
+      <!-- <h1 class="bigEntrance">
+        <%#= t('app_title') %>
+      </h1> -->
+      <%#= render "shared/logo" %>
+      <%= image_tag("AntoineMagnyLogo.png", :class => "bigEntrance img-fit-parent") %>
+
+      <h3 class="mini-padded">
         <%= t('a_portfolio') %>
       </h3>
-      <%= t('and_some_cows') %>
+      <%#= t('and_some_cows') %>
     </div>
   </div>
+  <div class="col-xs-0 col-md-3"></div>
 </div>
+<!--   </div>
+</div> -->
 
-<div class="container">
+
   <!-- current -->
   <div class="row top-margin" id="current">
     <div class="col-xs-12 ">
