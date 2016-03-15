@@ -53,6 +53,36 @@
   <div class="row top-margin" id="current">
     <div class="col-xs-12 ">
       <div class="auto-rotate">
+        <div class="">
+          <h3 class="mini-padded ">
+            <%= t('the_origin') %>
+          </h3>
+           <%= image_tag "theorigin.jpeg", class: "img-fit-parent smaller centered" %>
+           <div class="bottom">
+             <p><%= t('Position') %></p>
+             <p><%= t('founder') %></p>
+           </div>
+        </div>
+        <div class="">
+          <h3 class="mini-padded">
+            <%= t('functions') %>
+          </h3>
+           <p><%= t('running') %></p>
+           <a href="http://www.theorigin.co" target="blank">
+              <div class="btn pulse bottom"><%= t('visit') %></div>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- past   -->
+
+   <div class="row top-margin" id="past">
+    <div class="col-xs-12 ">
+      <div class="auto-rotate">
         <div class="white">
           <h3 class="mini-padded ">
             <%= t('Sign2Heal') %>
@@ -78,6 +108,7 @@
       </div>
     </div>
   </div>
+
   <div class="row top-margin">
     <div class="col-xs-12 ">
       <div class="auto-rotate">
@@ -109,10 +140,7 @@
   </div>
 
 
-
-
-  <!-- past   -->
-  <div class="row top-margin" id="past">
+  <div class="row top-margin">
     <div class="col-xs-12 ">
       <div class="auto-rotate">
         <div class="">
@@ -283,10 +311,10 @@
         <% t = Time.at(Time.now - Time.new(1988,1,18,12,00)) %>
         <div class="time"><%= t.year - 1970 %> <%= t('years') %> <%= t.month %> <%= t('months') %> <%= t.day %> <%= t('days') %> <%= t.hour %> <%= t('hours') %> <%= t.min %> <%= t('minutes') %> & <%= t.sec %> <%= t('seconds') %> <%= t('old') %></div>
       </p>
-      <p><%= t('and') %> <%= t('living_in') %> <%= t('antwerp') %></p>
+      <!-- <p><%#= t('and') %> <%#= t('living_in') %> <%#= t('antwerp') %></p> -->
       <hr>
       <p><%= t('I_also_do') %>: </p>
-      <p><a href="http://www.instagram.com/ketogenicallday" target="_blank"><%= t('eating') %></a>, <a href="http://www.magnyficent.com/images/drinking.jpg"><%= t('drinking') %></a>, <a href="http://www.magnyficent.com/images/skiing.jpg"><%= t('skiing') %></a> or <a href="http://www.magnyficent.com/images/water.jpg"><%= t('playing_in_the_water') %></a></p>
+      <p><a href="http://www.instagram.com/ketogenicallday" target="_blank"><%= t('eating') %></a>, <a href="http://www.magnyficent.com/images/skiing.jpg"><%= t('skiing') %></a> or <a href="http://www.magnyficent.com/images/water.jpg"><%= t('playing_in_the_water') %></a></p>
       <p>-</p>
       <p><%= t('thanks') %></p>
     </div>
