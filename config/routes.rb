@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   scope '(:locale)', locale: /fr|es/ do
+    get "20nudos" => 'home#veinte_nudos'
     root 'home#index'
   end
   # The priority is based upon order of creation: first created -> highest priority.
